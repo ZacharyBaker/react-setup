@@ -10,7 +10,7 @@ module.exports = {
   ],
   module: {
     loaders: [
-    
+    	{test: /\.js$/, include: __dirname + '/app', loader: "babel-loader"}
     ]
   },
   output: {
