@@ -3,14 +3,15 @@ import ReactRouter from 'react-router';
 import {Router} from 'react-router';
 import {Route} from 'react-router';
 import {IndexRoute} from 'react-router';
+import {hashHistory} from 'react-router';
 
 var Main = require('../components/Main');
 var Home = require('../components/Home');
 
 var routes = (
-	<Router>
+	<Router history={hashHistory}>
 		<Route path='/' component={Main}>
-			<Route path='/home' component={Home} />
+			<IndexRoute component={Home} />
 		</Route>
 	</Router>
 );
