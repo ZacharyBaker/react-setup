@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import routes from './config/routes'
 
-class HelloWorld extends React.Component {
-	render() {
-		return (
-			<div> Message: {this.props.message} </div>
-		)
-	}
-}
 
 ReactDOM.render(
-	<HelloWorld  message="I'm a saucy message..."/>,
+	routes,
 	document.getElementById('app')
 );
