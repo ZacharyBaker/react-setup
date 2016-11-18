@@ -1,5 +1,6 @@
 import React from 'react';
 import reactCSS from 'reactcss';
+import MovieGetter from './MovieGetter';
 
 export default class Home extends React.Component {
 
@@ -15,6 +16,7 @@ export default class Home extends React.Component {
 		return (
 			<div>
 				<h1 style={ styles.title }>Movie Time Breh</h1>
+				<MovieGetter />
 			</div>
 		)
 	}
