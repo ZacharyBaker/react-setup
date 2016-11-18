@@ -8,13 +8,13 @@ export default class Home extends React.Component {
 			'default': {
 				title: {
 					fontSize: '20px',
-					color: 'green'
+					color: 'blue'
 				}
 			}
 		})
 		return (
 			<div>
-				<h1 style={ styles.title }>HOMIES</h1>
+				<h1 style={ styles.title }>Movie Time Breh</h1>
 			</div>
 		)
 	}
